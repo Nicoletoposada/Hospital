@@ -1,13 +1,11 @@
 package paquete;
 
-public class Paciente extends Persona
+public class Paciente extends Hospital
 {
-    String lugarAtencion, motivoDeConsulta, medicoQueAtendio;
-    
     @Override
-    public String imprimir()
+    public String Datos(String codigo, String apellidos, String nombres, String sexo, String direccion, String motivo, String medico, String fecha)
     {
-        super.imprimir();
-        return (apellido + " " + nombre + " de codigo " + codigo + ", sexo " + sexo + ", direccion " + direccion + ", fue atendido en " + lugarAtencion + " por " + medicoQueAtendio + " por " + motivoDeConsulta + ", el día " + fecha);
-    }
+        super.Datos(codigo, apellidos, nombres, sexo, direccion, motivo, medico, fecha);
+        return "El paciente " + apellidos + " " + nombres + " de codigo " + codigo + ", direccion " + direccion + " y sexo " + sexo + " tubo una cita medica el dia " + fecha + " por " + motivo + " con el medico " + medico;
+    }      
 }

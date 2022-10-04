@@ -1,16 +1,6 @@
 package paquete;
 
-public class Persona
+public interface Persona
 {
-    String nombre = "";
-    String apellido = "";
-    String sexo = "";
-    String direccion = "";
-    String fecha = "";
-    int codigo;
-    
-    public String imprimir()
-    {
-        return "";
-    }
+    public String persona(String a);
 }
